@@ -1,9 +1,8 @@
 const router = require('express').Router();
-const tf = require('@tensorflow/tfjs');
 require('@tensorflow/tfjs-node');
 const toxicity = require('@tensorflow-models/toxicity');
 
-router.post('/toxicity', async (req, res, next) => {
+router.post('/toxicity', async (req, res) => {
   const threshold = 0.9;
 
   const labelsToInclude = ['identity_attack',
