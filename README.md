@@ -50,7 +50,7 @@ Welcome to the Toxicity Detection API, a Node.js project that uses TensorFlow.js
    Example using curl:
 
     ```bash
-    curl -X POST -H "Content-Type: application/json" -d '{"text":"Your text to analyze for toxicity."}' http://localhost:your-port/toxicity
+    curl -X POST -H "Content-Type: application/json" -d '{"text":"Your text to analyze for toxicity."}' http://localhost:3000/toxicity
     ```
 
    The API will respond with the toxicity predictions in JSON format.
